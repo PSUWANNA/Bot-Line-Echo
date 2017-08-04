@@ -1,0 +1,59 @@
+{
+  "name": "Bot-Line-Echo",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "HEROKU_EXEC_URL": {
+      "required": true
+    },
+    "HEROKU_POSTGRESQL_BLUE_URL": {
+      "required": true
+    },
+    "HEROKU_POSTGRESQL_PURPLE_URL": {
+      "required": true
+    },
+    "HEROKU_POSTGRESQL_SILVER_URL": {
+      "required": true
+    },
+    "HEROKU_REDIS_GOLD_URL": {
+      "required": true
+    },
+    "HEROKU_REDIS_JADE_URL": {
+      "required": true
+    },
+    "LINE_BOT_CHANNEL_SECRET": {
+      "required": true
+    },
+    "LINE_BOT_CHANNEL_TOKEN": {
+      "required": true
+    },
+    "MONGODB_URI": {
+      "required": true
+    },
+    "REDIS_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-exec",
+    "herokuconnect",
+    "herokuconnect",
+    "mongolab",
+    "heroku-postgresql",
+    "heroku-postgresql",
+    "heroku-postgresql",
+    "heroku-postgresql",
+    "heroku-postgresql",
+    "heroku-redis",
+    "heroku-redis",
+    "heroku-redis"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/gradle"
+    }
+  ]
+}
